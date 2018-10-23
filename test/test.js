@@ -15,4 +15,14 @@ describe('FizzBuzz', () => {
   it('should return 7 for 7th number', () => {
     assert.equal(fizzBuzz()[6], 7)
   })
+
+  it('should return fizz for 3rd or 33th number', () => {
+    assert.equal(fizzBuzz()[2], 'Fizz')
+    assert.equal(fizzBuzz()[32], 'Fizz')
+  })
+
+  it('should return Buzz for 5th or 25th number', () => {
+    assert.equal(fizzBuzz()[4], 'Buzz')
+    assert.equal(fizzBuzz()[24], 'Buzz')
+  })
 })
